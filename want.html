@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>SHERRIF'S LIST</title>
+    <style>
+      @font-face {
+    font-family: 'Durango Western Eroded Demo';
+    src: url('Durango Western Eroded Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Reward';
+    src: url('REWARD PERSONAL USE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Trocader';
+    src: url('Trocader.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Romantiques';
+    src: url('Romantiques.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Outlaw';
+    src: url('Cowboy Outlaw.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Outlaw textured';
+    src: url('Cowboy Outlaw Textured.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.body {
+    background-color: rgba(62, 58, 58, 0.679);
+}
+.last-section{
+    display: flex;
+    flex-direction: row;
+    background-image: url('brown-wood-textured-background-with-design-space.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.769);
+    margin-bottom: 25px;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    background-image: url('brown-wood-textured-background-with-design-space.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.769);
+    margin-bottom: 25px;
+}
+.box-1{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-direction: row;
+    background-image: url('Screenshot\ 2024-12-23\ 190533.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.769);
+    border-radius: 4px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box-1 img{
+    height: auto;
+    width: 400px;
+}
+.box1-text{
+    display: flex;
+    font-weight: bold;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Trocader, Arial, Helvetica, sans-serif;
+}
+.box-2{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('Screenshot\ 2024-12-23\ 190533.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.769);
+    border-radius: 4px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box-2 img{
+    height: auto;
+    width: 400px;
+    padding-top: 20%;
+}
+.box2-text{
+    display: flex;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    font-family: Trocader, Arial, Helvetica, sans-serif;
+}
+.wanted{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.want-2{
+    font-family: Outlaw textured, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+.want2{
+    font-family: Outlaw textured, Arial, Helvetica, sans-serif;
+    border: none;
+    font-size: 35px;
+    border-radius: 4px;
+    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(121, 69, 20);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
+}
+.want2:hover{
+    color: rgb(121, 69, 20);
+    background-color: rgb(255, 255, 255);
+}
+.butt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-image: url('brown-wood-textured-background-with-design-space.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer{ 
+    display: flex;   
+    font-family: Durango Western Eroded Demo,Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-shadow: 2px 2px 0 rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 0;
+}
+@media (max-width: 1024px) {
+    .box-1 img{
+        width: 300px;
+    }
+    .box1-text{
+        font-size: 40px;
+    }
+    .box-2 img{
+        width: 300px;
+    }
+    .box2-text{
+        font-size: 30px;
+    }
+    .want-2{
+        font-size: 15px;
+    }
+    .want2{
+        font-size: 30px;
+    }
+    .footer{
+        font-size: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .box-1 img{
+        width: 250px;
+    }
+    .box1-text{
+        font-size: 30px;
+    }
+    .box-2 img{
+        width: 200px;
+    }
+    .box2-text{
+        font-size: 25px;
+    }
+    .want-2{
+        font-size: 12px;
+    }
+    .want2{
+        font-size: 20px;
+    }
+    .footer{
+        font-size: 30px;
+    }
+}
+@media (max-width: 480px) {
+    .box-1{
+        flex-direction: column;
+    }
+    .last-section{
+        flex-direction: column;
+    }
+    .box-1 img{
+        width: 300px;
+    }
+    .box1-text{
+        font-size: 40px;
+    }
+    .box-2 img{
+        width: 225px;
+    }
+    .box2-text{
+        font-size: 30px;
+    }
+    .want-2{
+        font-size: 15px;
+    }
+    .want2{
+        font-size: 25px;
+    }
+    .footer{
+        font-size: 25px;
+    }
+}
+@media (max-width: 320px) {
+    .box-1{
+        flex-direction: column;
+    }
+    .last-section{
+        flex-direction: column;
+    }
+    .box-1 img{
+        width: 250px;
+    }
+    .box1-text{
+        font-size: 35px;
+    }
+    .box-2 img{
+        width: 175px;
+    }
+    .box2-text{
+        font-size: 25px;
+    }
+    .want-2{
+        font-size: 12px;
+    }
+    .want2{
+        font-size: 25px;
+    }
+    .footer{
+        font-size: 25px;
+    }
+}
+    </style>
+</head>
+<body class="body">
+  <div class="header">
+    <div class="box-1">
+        <img src="Rustic_Wanted_Poster-removebg-preview.png" alt="WANTED">
+        <div class="box1-text">
+          THE WANTED LIST
+        </div>
+      </div>
+  </div>
+    <div class="last-section">
+        <div class="box-2">
+            <img src="afaq.png" alt="WANTED">
+            <div class="box2-text">
+              SIGMA BABE
+            </div>
+            <div class="wanted">
+                <p class="want-2">
+                    AFAQ, the sigma baby of Classroom Gulch, strides through the day like a lone wolf with a knack for mischief. The pookie and comedian rolled into one, he’s quick with a quip and sharper than a cactus needle, leaving classmates roaring with laughter and teachers fighting back smirks. A true wildcard, he’s the laughter in the dusty halls.
+                </p>
+            </div>
+          </div>
+        <div class="box-2">
+          <img src="zamin.png" alt="WANTED">
+          <div class="box2-text">
+            POOKIE
+          </div>
+          <div class="wanted">
+            <p class="want-2">
+                Zamin, the feller with an aura brighter than a desert sunrise, moseys into town with General Rizla, his sharp-eyed hound, and his stubborn ol’ ass. A true pookie, he’s got antics wilder than a stampede and a knack for dramatics that’d leave the saloon hollerin’ and hootin’.
+            </p>
+        </div>
+        </div>
+        <div class="box-2">
+          <img src="mahad.png" alt="WANTED">
+          <div class="box2-text">
+            THE MACHO MAN
+          </div>
+          <div class="wanted">
+            <p class="want-2">
+              
+Mahad, the Macho Man of the Classroom Range, reigns as the high-falutin’ admin of the study gang. With a jawline sharper than a Bowie knife and a gaze that cuts like prairie wind, he’s a sight to behold. Beneath his quiet hide lies a sleeper build, strong as a bronco and steady as a frontier oak. Mahad don’t just walk the range—he owns it, the Macho Man in all his rugged glory.
+            </p>
+        </div>
+      </div>
+      </div>
+      <div class="butt">
+        <a class="a" href="index.html">
+          <button class="want2">
+            BACK TO HOME
+          </button>
+        </a>
+      </div>
+      <footer>
+        <p class="footer">
+          ALL RIGHTS RESERVED
+        </p>
+      </footer>
+</body>
+</html>

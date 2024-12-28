@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>MUZZAMMIL PROFILE</title>
+  <style>
+      @font-face {
+    font-family: 'Durango Western Eroded Demo';
+    src: url('Durango Western Eroded Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Reward';
+    src: url('REWARD PERSONAL USE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Trocader';
+    src: url('Trocader.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Romantiques';
+    src: url('Romantiques.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Outlaw';
+    src: url('Cowboy Outlaw.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Outlaw textured';
+    src: url('Cowboy Outlaw Textured.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.a{
+    text-decoration: none;
+}
+.body {
+    background-color: rgba(62, 58, 58, 0.679);
+}
+.header {
+    display: flex;
+    height: 250px;
+    margin-bottom: 170px;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('brown-wood-textured-background-with-design-space.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.769);
+    position: relative;
+    overflow: visible;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.471);
+    z-index: 1;
+}
+
+.header > * {
+    position: relative;
+    z-index: 2;
+}
+
+.title-head {
+    font-family: Durango Western Eroded Demo, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 20px;
+    font-size: 85px;
+    color: black;
+    text-shadow: 2px 2px 0 rgb(255, 255, 255);
+    text-align: center;
+}
+
+.right-head,
+.left-head {
+    object-fit: cover;
+    height: 300px;
+}
+
+.right-head img,
+.left-head img {
+    height: 450px;
+}
+.last-section{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: url('brown-wood-textured-background-with-design-space.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.769);
+    margin-bottom: 25px;
+}
+.box-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('Screenshot\ 2024-12-23\ 190533.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-shadow: 5px 10px 25px rgba(0, 0, 0, 0.769);
+    border-radius: 4px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box-2 img{
+    height: 500px;
+    padding: 20px;
+}
+.desc{
+    display: flex;
+    font-size: 50px;
+    padding: 20px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    font-family: Trocader, Arial, Helvetica, sans-serif;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.wanted{
+    font-family: Outlaw textured,Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    padding: 30px;
+}
+.want2{
+    font-family: Outlaw textured, Arial, Helvetica, sans-serif;
+    border: none;
+    font-size: 35px;
+    border-radius: 4px;
+    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(121, 69, 20);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+.want2:hover{
+    color: rgb(121, 69, 20);
+    background-color: rgb(255, 255, 255);
+}
+.butt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-image: url('brown-wood-textured-background-with-design-space.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer{ 
+    display: flex;   
+    font-family: Durango Western Eroded Demo,Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-shadow: 2px 2px 0 rgb(255, 255, 255);
+    padding: 20px;
+    margin-bottom: 0;
+}
+@media (max-width: 768px) {
+    .title-head{
+        font-size: 50px;
+    }
+    .right-head,
+    .left-head{
+        height:200px;
+    }
+    .right-head img,
+    .left-head img{
+        height:250px;
+    }
+    .header{
+        margin-bottom: 20px;
+    }
+    .desc{
+        display: flex;
+        font-size: 30px;
+        padding: 10px;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-align: center;
+        font-family: Trocader, Arial, Helvetica, sans-serif;font-family: 30px;
+    }
+    .wanted{
+        font-family: Outlaw textured,Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        padding: 15px;
+    }
+    .box-2 img{
+        height: 200px;
+    }
+    .want2{
+        font-size: 20px;
+    }
+    footer{
+        height: 60px;
+    }
+    .footer{
+        font-size: 25px;
+    }
+}
+@media (max-width: 480px) {
+    .title-head {
+        font-size: 40px;
+        padding:10px;
+    }
+    .right-head,
+    .left-head{
+        height: 125px;
+    }
+    .right-head img,
+    .left-head img{
+        height: 225px;
+    }
+    .last-section{
+        width: 441.81px;
+    }
+    .header{
+        margin-bottom: 35px;
+        width: fit-content;
+    }
+    .desc{
+        font-size: 25px;
+    }
+    .wanted{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .box-2 img{
+        padding: 10px;
+        height: 175px;
+    }
+    .want2{
+        font-size: 15px;
+        padding: 10px;
+    }
+    .top{
+        padding-bottom: 10px;
+    }
+    footer{
+        width:441.81px;
+    }
+    .footer{
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+  </style>
+</head>
+<body class="body">
+  <div class="header">
+    <div class="left-head">
+      <img src="me-removebg-preview.png" alt="Cool Image">
+    </div>
+    <div class="title-head">
+      CR HUNT 2025
+    </div>
+    <div class="right-head">
+      <img src="saad-removebg-preview.png" alt="COOL GUY">
+    </div>
+  </div>
+  <div class="last-section">
+  <div class="box-2">
+    <div class="top">
+      <img src="muzz (2).png" alt="WANTED">
+      <div class="box2-text">
+        <div class="desc">
+          CURRENT CR
+        </div>
+        <div class="wanted">
+          A lanky feller with a frame that casts a long shadow under the noonday sun, is a sight to behold in these dusty parts. His beard, thick as prairie brush, hangs like a badge of grit, and his spectacles catch the glint of the sun like a gunslinger’s revolver ready to draw. With skin the color of rich desert clay and a gait as steady as a horse’s trot, he carries the air of a man who’s seen the grit and grind of the trail. Standin’ tall like a cedar on the plains, Muzzamil’s got the kind of look that makes folk tip their hat in respect—or maybe just move outta his way when he strolls into town.
+        </div>
+      </div>
+    </div>
+    <div class="butt">
+      <a class="a" href="index.html">
+        <button class="want2">
+          BACK TO HOME
+        </button>
+      </a>
+    </div>
+  </div>
+</div>
+<footer>
+  <p class="footer">
+    ALL RIGHTS RESERVED
+  </p>
+</footer>
+</body>
+</html>
